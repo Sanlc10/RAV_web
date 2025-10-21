@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+
+  --color-primary: #6B8FA3;
+  --color-secondary: #2c3e50;
+  --color-dark: #1a1a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans);
+}
+
+.btn-primary {
+  @apply bg-white text-gray-900 px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-lg overflow-hidden;
+}
