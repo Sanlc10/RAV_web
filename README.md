@@ -1,100 +1,101 @@
-# Journal X - Adventure & Travel Magazine Website
+# Ríos de Agua Viva - Sitio Web de la Iglesia
 
-A modern, responsive travel and adventure magazine website built with **Vite**, **React**, and **Tailwind CSS**. Features a dynamic hero carousel, article categories, newsletter subscription, and a beautiful UI with smooth animations.
+Sitio web moderno y responsivo para la Iglesia Cristiana Evangélica **Ríos de Agua Viva**, construido con **Vite**, **React**, y **Tailwind CSS**. Presenta un carrusel dinámico, información de ministerios, horarios de servicio, newsletter, y una interfaz hermosa con animaciones suaves.
 
-![Journal X](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=400&fit=crop)
+![Ríos de Agua Viva](https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1200&h=400&fit=crop)
 
-## Features
+## Características
 
-- **Responsive Design** - Mobile-first approach with seamless experience across all devices
-- **Hero Carousel** - Auto-playing slideshow with manual navigation
-- **Dynamic Categories** - Interactive category cards with hover effects
-- **Newsletter Subscription** - Email validation and submission handling
-- **Author Sidebar** - Social media integration and popular articles
-- **Smooth Animations** - Professional transitions and hover effects throughout
-- **Modern UI/UX** - Clean, professional design with Tailwind CSS
+- **Diseño Responsivo** - Experiencia perfecta en dispositivos móviles, tablets y desktop
+- **Carrusel Hero** - Slideshow automático con navegación manual
+- **Sección de Ministerios** - Tarjetas interactivas para Alabanza, Ministerio Infantil y Pastoral
+- **Horarios y Eventos** - Información actualizada de servicios y discipulados
+- **Newsletter** - Formulario de suscripción con validación de email
+- **Información de Pastores** - Biografía y redes sociales de los pastores
+- **Animaciones Suaves** - Transiciones profesionales y efectos hover
+- **UI/UX Moderna** - Diseño limpio y profesional con Tailwind CSS
 
-## Tech Stack
+## Stack Tecnológico
 
-- **[Vite](https://vitejs.dev/)** - Lightning-fast build tool and dev server
-- **[React 19](https://react.dev/)** - Modern UI framework with hooks
-- **[Tailwind CSS 4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[React Icons](https://react-icons.github.io/react-icons/)** - Popular icon library
-- **JavaScript** - ES6+ features (no TypeScript)
+- **[Vite](https://vitejs.dev/)** - Herramienta de build ultrarrápida
+- **[React 19](https://react.dev/)** - Framework UI moderno con hooks
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - Framework CSS utility-first
+- **[React Icons](https://react-icons.github.io/react-icons/)** - Librería de íconos
+- **JavaScript** - ES6+ (sin TypeScript)
 
-## Project Structure
+## Estructura del Proyecto
 
 ```
 journal-x/
 ├── src/
 │   ├── components/
-│   │   ├── Header.jsx          # Sticky navigation with mobile menu
-│   │   ├── Hero.jsx            # Auto-playing carousel
-│   │   ├── CategoryCard.jsx    # Category display cards
-│   │   ├── ArticleCard.jsx     # Article preview cards
-│   │   ├── Newsletter.jsx      # Email subscription form
-│   │   ├── Sidebar.jsx         # Author info & popular posts
-│   │   └── Footer.jsx          # Site footer
+│   │   ├── Header.jsx          # Navegación sticky con menú mobile
+│   │   ├── Hero.jsx            # Carrusel automático
+│   │   ├── CategoryCard.jsx    # Tarjetas de ministerios
+│   │   ├── ArticleCard.jsx     # Tarjetas de eventos
+│   │   ├── Newsletter.jsx      # Formulario de suscripción
+│   │   ├── Sidebar.jsx         # Info de pastores y horarios
+│   │   └── Footer.jsx          # Footer del sitio
 │   ├── data/
-│   │   └── content.js          # Mock data for all content
+│   │   └── content.js          # Datos de la iglesia
 │   ├── assets/
-│   │   └── images/             # Image assets
-│   ├── App.jsx                 # Main application component
-│   ├── index.css               # Tailwind directives & global styles
-│   └── main.jsx                # React entry point
-├── public/                     # Static assets
-├── index.html                  # HTML template
-├── package.json                # Dependencies and scripts
-├── tailwind.config.js          # Tailwind configuration
-├── postcss.config.js           # PostCSS configuration
-├── vite.config.js              # Vite configuration
-└── README.md                   # This file
+│   │   └── images/             # Imágenes
+│   ├── App.jsx                 # Componente principal
+│   ├── index.css               # Estilos globales de Tailwind
+│   └── main.jsx                # Punto de entrada de React
+├── public/                     # Recursos estáticos
+├── index.html                  # Template HTML
+├── package.json                # Dependencias y scripts
+├── tailwind.config.js          # Configuración de Tailwind
+├── postcss.config.js           # Configuración de PostCSS
+├── vite.config.js              # Configuración de Vite
+└── README.md                   # Este archivo
 ```
 
-## Getting Started
+## Comenzar
 
-### Prerequisites
+### Prerequisitos
 
-- **Node.js** 18+ and npm installed on your machine
-- Basic knowledge of React and Tailwind CSS
+- **Node.js** 18+ y npm instalados
+- Conocimiento básico de React y Tailwind CSS
 
-### Installation
+### Instalación
 
-1. **Clone or navigate to the project directory:**
+1. **Navegar al directorio del proyecto:**
 
 ```bash
 cd journal-x
 ```
 
-2. **Install dependencies:**
+2. **Instalar dependencias:**
 
 ```bash
 npm install
 ```
 
-3. **Start the development server:**
+3. **Iniciar el servidor de desarrollo:**
 
 ```bash
 npm run dev
 ```
 
-4. **Open your browser and visit:**
+4. **Abrir el navegador y visitar:**
 
 ```
-http://localhost:5173
+http://localhost:5174
 ```
 
-The development server supports Hot Module Replacement (HMR), so your changes will appear instantly without page refresh.
+El servidor de desarrollo soporta Hot Module Replacement (HMR), por lo que tus cambios aparecerán instantáneamente.
 
-## Available Scripts
+## Scripts Disponibles
 
-### Development
+### Desarrollo
 
 ```bash
 npm run dev
 ```
 
-Starts the development server at `http://localhost:5173` with HMR enabled.
+Inicia el servidor de desarrollo en `http://localhost:5174` con HMR habilitado.
 
 ### Build
 
@@ -102,7 +103,7 @@ Starts the development server at `http://localhost:5173` with HMR enabled.
 npm run build
 ```
 
-Creates an optimized production build in the `dist/` folder.
+Crea un build optimizado para producción en la carpeta `dist/`.
 
 ### Preview
 
@@ -110,7 +111,7 @@ Creates an optimized production build in the `dist/` folder.
 npm run preview
 ```
 
-Preview the production build locally before deployment.
+Previsualiza el build de producción localmente antes del despliegue.
 
 ### Lint
 
@@ -118,199 +119,107 @@ Preview the production build locally before deployment.
 npm run lint
 ```
 
-Run ESLint to check code quality and identify issues.
+Ejecuta ESLint para verificar la calidad del código.
 
-## Component Documentation
+## Contenido del Sitio
 
-### Header Component
+### Secciones Principales
 
-Sticky navigation bar with:
-- Logo and brand name
-- Desktop navigation menu
-- Dropdown menu for "Pages"
-- Mobile hamburger menu
-- Subscribe button
-- Scroll-based background change effect
+1. **Inicio (Hero)** - Carrusel con 3 slides de bienvenida
+2. **Nuestros Ministerios** - Alabanza y Adoración, Ministerio Infantil, Ministerio Pastoral
+3. **Próximos Eventos y Horarios** - Cultos dominicales y discipulados
+4. **Newsletter** - Suscripción para recibir actualizaciones
+5. **Quiénes Somos** - Historia y misión de la iglesia
+6. **Nuestros Pastores** - Info de Pastores Juan Manuel y Mariana Guzmán
+7. **Contacto** - Dirección y redes sociales
 
-### Hero Component
+### Información de la Iglesia
 
-Auto-playing carousel featuring:
-- 3 rotating slides with 5-second intervals
-- Background images with gradient overlays
-- Category badges and dates
-- Titles and descriptions
-- Navigation dots for manual control
+- **Nombre:** Ríos de Agua Viva
+- **Ubicación:** San Juan Tlautla, 72750, Cholula de Rivadavia, Puebla
+- **Fundación:** Diciembre 2023
+- **Pastores:** Juan Manuel y Mariana Guzmán (20 años de matrimonio, 13 años en el ministerio)
 
-**Props:**
-- `slides` - Array of slide objects with image, badge, date, title, and description
+### Horarios de Servicio
 
-### CategoryCard Component
+- **Domingos 10:30 AM** - Discipulado: Fundamentos de la Fe (Presencial)
+- **Domingos 12:00 PM** - Culto General: Adoración y Palabra (Presencial)
+- **Miércoles 8:30 PM** - Discipulado de Adoración (Vía Zoom)
 
-Interactive category cards with:
-- Background images with zoom on hover
-- Gradient overlays
-- External link icons
-- Smooth transitions
+### Redes Sociales
 
-**Props:**
-- `title` - Category name
-- `description` - Brief description
-- `image` - Background image URL
-- `link` - Destination URL
+- **Facebook:** [facebook.com/RiosDeAguaVivaPuebla](https://facebook.com/RiosDeAguaVivaPuebla)
+- **Instagram:** [@riosdeaguaviva70](https://instagram.com/riosdeaguaviva70)
 
-### ArticleCard Component
+## Personalización
 
-Simple article preview displaying:
-- Category and date metadata
-- Article title with hover effect
-- Clickable link to full article
+### Actualizar Contenido
 
-**Props:**
-- `category` - Article category
-- `date` - Publication date
-- `title` - Article headline
-- `link` - Article URL
+Edita `src/data/content.js` para modificar:
+- Slides del carrusel
+- Información de ministerios
+- Eventos y horarios
+- Datos de los pastores
+- Sección "Quiénes Somos"
 
-### Newsletter Component
+### Cambiar Colores
 
-Email subscription form with:
-- Email input validation
-- Submit button with icon
-- Success message display
-- Privacy notice
-- Decorative side image
-
-### Sidebar Component
-
-Author information and popular articles featuring:
-- Author photo (circular)
-- Name and biography
-- Social media links (Facebook, Twitter, Pinterest, LinkedIn)
-- List of popular articles
-- "View All" link
-
-**Props:**
-- `author` - Object with name, bio, photo, and social links
-- `articles` - Array of article objects
-
-### Footer Component
-
-Site footer containing:
-- Brand logo and description
-- Quick links navigation
-- Category links
-- Social media icons
-- Copyright and legal links
-
-## Customization Guide
-
-### Adding New Categories
-
-Edit `src/data/content.js`:
-
-```javascript
-export const categories = [
-  {
-    id: 4,
-    title: "Your Category",
-    description: "Category description",
-    image: "https://example.com/image.jpg",
-    link: "#your-category"
-  },
-  // ... existing categories
-];
-```
-
-### Changing Colors
-
-Edit `tailwind.config.js`:
+Edita `tailwind.config.js`:
 
 ```javascript
 theme: {
   extend: {
     colors: {
-      primary: '#YOUR_COLOR',
-      secondary: '#YOUR_COLOR',
-      dark: '#YOUR_COLOR',
+      primary: '#4A90E2',      // Azul principal
+      secondary: '#2c3e50',     // Gris oscuro
+      dark: '#1a1a1a',         // Negro
     },
   },
 }
 ```
 
-### Modifying Hero Carousel
+### Modificar Intervalos del Carrusel
 
-In `src/data/content.js`, update the `heroSlides` array:
-
-```javascript
-export const heroSlides = [
-  {
-    id: 1,
-    image: "your-image-url",
-    badge: "Your Badge",
-    date: "Your Date",
-    title: "Your Title",
-    description: "Your description"
-  }
-];
-```
-
-To change auto-play interval, edit `src/components/Hero.jsx` (default is 5000ms):
+En `src/components/Hero.jsx`, cambia el intervalo de auto-avance (default: 5000ms):
 
 ```javascript
 const timer = setInterval(() => {
   setCurrentSlide((prev) => (prev + 1) % slides.length);
-}, 5000); // Change this value
+}, 5000); // Cambia este valor
 ```
 
-### Adding More Articles
+## Despliegue
 
-Update `src/data/content.js`:
-
-```javascript
-export const popularArticles = [
-  {
-    id: 7,
-    category: "Category",
-    date: "Date",
-    title: "Article Title",
-    link: "#article-link"
-  },
-  // ... existing articles
-];
-```
-
-## Deployment
-
-### Build for Production
+### Build para Producción
 
 ```bash
 npm run build
 ```
 
-This creates a `dist/` folder with optimized files ready for deployment.
+Esto crea una carpeta `dist/` con archivos optimizados listos para despliegue.
 
-### Deploy to Vercel
+### Desplegar en Vercel
 
 ```bash
 npm install -g vercel
 vercel
 ```
 
-### Deploy to Netlify
+### Desplegar en Netlify
 
 ```bash
 npm install -g netlify-cli
 netlify deploy --prod
 ```
 
-### Deploy to GitHub Pages
+### Desplegar en GitHub Pages
 
-1. Install gh-pages:
+1. Instalar gh-pages:
 ```bash
 npm install -D gh-pages
 ```
 
-2. Add to package.json:
+2. Agregar a package.json:
 ```json
 "scripts": {
   "predeploy": "npm run build",
@@ -318,67 +227,69 @@ npm install -D gh-pages
 }
 ```
 
-3. Deploy:
+3. Desplegar:
 ```bash
 npm run deploy
 ```
 
-## Browser Support
+## Soporte de Navegadores
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- Chrome (última versión)
+- Firefox (última versión)
+- Safari (última versión)
+- Edge (última versión)
 
-## Performance Features
+## Características de Rendimiento
 
-- Optimized images from Unsplash CDN
+- Imágenes optimizadas desde Unsplash CDN
 - Lazy loading support
-- Minimal bundle size
-- Fast page loads with Vite
-- Efficient re-renders with React
+- Bundle size mínimo
+- Carga de página rápida con Vite
+- Re-renders eficientes con React
 
-## Accessibility
+## Accesibilidad
 
-- Semantic HTML5 elements
-- Alt text for images
-- ARIA labels for interactive elements
-- Keyboard navigation support
-- Focus states for all interactive elements
+- Elementos HTML5 semánticos
+- Textos alt para imágenes
+- Labels ARIA para elementos interactivos
+- Soporte de navegación con teclado
+- Estados de focus para elementos interactivos
 
-## Future Enhancements
+## Mejoras Futuras
 
-Potential features to add:
-- [ ] Blog post detail pages
-- [ ] Search functionality
-- [ ] Dark mode toggle
-- [ ] Comment system
-- [ ] Social sharing buttons
-- [ ] SEO optimization
-- [ ] Analytics integration
-- [ ] Pagination for articles
-- [ ] Filter by category
-- [ ] Tag system
+Características potenciales a agregar:
+- [ ] Páginas de detalle para cada ministerio
+- [ ] Sistema de eventos con calendario
+- [ ] Galería de fotos
+- [ ] Audio de predicaciones
+- [ ] Transmisión en vivo
+- [ ] Sistema de donaciones
+- [ ] Blog con devocionales
+- [ ] Peticiones de oración
+- [ ] Directorio de miembros
+- [ ] Reserva de espacios
 
-## Contributing
+## Contribuir
 
-Feel free to fork this project and customize it for your own needs. Pull requests are welcome!
+Siéntete libre de hacer fork de este proyecto y personalizarlo para tu iglesia. Pull requests son bienvenidos.
 
-## License
+## Licencia
 
-This project is open source and available under the [MIT License](LICENSE).
+Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE).
 
-## Acknowledgments
+## Reconocimientos
 
-- Images from [Unsplash](https://unsplash.com/)
-- Icons from [React Icons](https://react-icons.github.io/react-icons/)
-- Built with [Vite](https://vitejs.dev/) and [React](https://react.dev/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Imágenes de [Unsplash](https://unsplash.com/)
+- Íconos de [React Icons](https://react-icons.github.io/react-icons/)
+- Construido con [Vite](https://vitejs.dev/) y [React](https://react.dev/)
+- Estilos con [Tailwind CSS](https://tailwindcss.com/)
 
-## Support
+## Soporte
 
-For issues or questions, please open an issue on the GitHub repository.
+Para preguntas o problemas, por favor abre un issue en el repositorio de GitHub.
 
 ---
 
-**Built with ❤️ using Vite + React + Tailwind CSS**
+**Construido con ❤️ para Ríos de Agua Viva usando Vite + React + Tailwind CSS**
+
+*"Donde encontrarás vida en Cristo"*

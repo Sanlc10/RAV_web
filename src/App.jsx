@@ -14,18 +14,20 @@ function App() {
       <Header />
 
       {/* Hero Section */}
-      <Hero slides={heroSlides} />
+      <div id="inicio">
+        <Hero slides={heroSlides} />
+      </div>
 
-      {/* Article Categories Section */}
-      <section className="py-20 px-4">
+      {/* Ministerios Section */}
+      <section className="py-20 px-4" id="ministerios">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 sm:mb-0">Article categories</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 sm:mb-0">Nuestros Ministerios</h2>
             <a
-              href="#all-articles"
+              href="#ministerios"
               className="text-gray-600 hover:text-blue-500 font-medium transition-colors duration-300"
             >
-              Browse all articles →
+              Ver todos los ministerios →
             </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -36,12 +38,12 @@ function App() {
         </div>
       </section>
 
-      {/* Popular Now Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      {/* Próximos Eventos y Horarios Section */}
+      <section className="py-20 px-4 bg-gray-50" id="horarios">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12">Popular now</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12">Próximos Eventos y Horarios</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {popularArticles.slice(0, 6).map((article) => (
+            {popularArticles.slice(0, 3).map((article) => (
               <ArticleCard key={article.id} {...article} />
             ))}
           </div>
@@ -49,13 +51,15 @@ function App() {
       </section>
 
       {/* Newsletter Section */}
-      <Newsletter />
+      <div id="newsletter">
+        <Newsletter />
+      </div>
 
-      {/* Featured Article + Sidebar Section */}
-      <section className="py-20 px-4">
+      {/* Quiénes Somos + Sidebar Section */}
+      <section className="py-20 px-4" id="quienes-somos">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-8">
-            {/* Featured Article */}
+            {/* Featured Article - Quiénes Somos */}
             <div className="relative h-[600px] rounded-xl overflow-hidden group">
               {/* Background Image */}
               <div
@@ -93,7 +97,7 @@ function App() {
                   href={featuredArticle.link}
                   className="inline-block bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
                 >
-                  Read Full Story
+                  Conocer Más
                 </a>
               </div>
             </div>
@@ -105,7 +109,9 @@ function App() {
       </section>
 
       {/* Footer */}
-      <Footer />
+      <div id="contacto">
+        <Footer />
+      </div>
     </div>
   );
 }

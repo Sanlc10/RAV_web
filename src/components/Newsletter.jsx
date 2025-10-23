@@ -12,18 +12,18 @@ const Newsletter = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!email) {
-      alert('Please enter your email address');
+      alert('Por favor ingresa tu correo electrónico');
       return;
     }
 
     if (!emailRegex.test(email)) {
-      alert('Please enter a valid email address');
+      alert('Por favor ingresa un correo electrónico válido');
       return;
     }
 
     // Success
     setIsSubmitted(true);
-    alert('Thank you for subscribing to Journal X! 🎉');
+    alert('¡Gracias por conectarte con Ríos de Agua Viva! 🙏');
     setEmail('');
 
     // Reset submitted state after 3 seconds
@@ -39,11 +39,10 @@ const Newsletter = () => {
           {/* Left Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Subscribe to our newsletter
+              Mantente conectado con nuestra comunidad
             </h2>
             <p className="text-gray-300 text-lg mb-8">
-              Get the latest adventure stories, travel tips, and gear reviews delivered straight to your inbox.
-              Join our community of explorers and never miss an update!
+              Recibe actualizaciones sobre nuestros servicios, eventos especiales, enseñanzas bíblicas y palabras de aliento directamente en tu correo. Únete a la familia Ríos de Agua Viva.
             </p>
 
             {/* Newsletter Form */}
@@ -52,14 +51,14 @@ const Newsletter = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email address"
+                placeholder="Ingresa tu correo electrónico"
                 className="flex-1 px-6 py-3 rounded-full bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
               <button
                 type="submit"
                 className="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transform hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center space-x-2"
               >
-                <span>Subscribe</span>
+                <span>Suscribirme</span>
                 <FaPaperPlane />
               </button>
             </form>
@@ -67,13 +66,13 @@ const Newsletter = () => {
             {/* Success Message */}
             {isSubmitted && (
               <div className="mt-4 bg-green-500 text-white px-6 py-3 rounded-full inline-block">
-                Successfully subscribed! Check your inbox.
+                ¡Suscripción exitosa! Revisa tu bandeja de entrada.
               </div>
             )}
 
             {/* Privacy Note */}
             <p className="text-gray-400 text-sm mt-4">
-              We respect your privacy. Unsubscribe at any time.
+              Respetamos tu privacidad. Puedes darte de baja en cualquier momento.
             </p>
           </div>
 
@@ -82,7 +81,7 @@ const Newsletter = () => {
             <div
               className="h-[400px] rounded-xl bg-cover bg-center"
               style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800)',
+                backgroundImage: 'url(https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&h=400&fit=crop)',
               }}
             ></div>
           </div>

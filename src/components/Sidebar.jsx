@@ -1,13 +1,13 @@
-import { FaFacebook, FaTwitter, FaPinterest, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube, FaEnvelope } from 'react-icons/fa';
 
 const Sidebar = ({ author, articles }) => {
   return (
     <aside className="space-y-8">
-      {/* Author Card */}
+      {/* Pastor Card */}
       <div className="bg-white rounded-xl shadow-lg p-6">
-        <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">About the Author</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Nuestros Pastores</h3>
 
-        {/* Author Photo */}
+        {/* Pastor Photo */}
         <div className="mb-4">
           <img
             src={author.photo}
@@ -16,12 +16,12 @@ const Sidebar = ({ author, articles }) => {
           />
         </div>
 
-        {/* Author Name */}
+        {/* Pastor Name */}
         <h4 className="text-xl font-bold text-gray-900 text-center mb-2">
           {author.name}
         </h4>
 
-        {/* Author Bio */}
+        {/* Pastor Bio */}
         <p className="text-gray-600 text-center mb-6">
           {author.bio}
         </p>
@@ -36,39 +36,39 @@ const Sidebar = ({ author, articles }) => {
             <FaFacebook className="text-2xl" />
           </a>
           <a
-            href={author.socials.twitter}
-            className="text-gray-600 hover:text-blue-400 transition-colors duration-300"
-            aria-label="Twitter"
+            href={author.socials.instagram}
+            className="text-gray-600 hover:text-pink-600 transition-colors duration-300"
+            aria-label="Instagram"
           >
-            <FaTwitter className="text-2xl" />
+            <FaInstagram className="text-2xl" />
           </a>
           <a
-            href={author.socials.pinterest}
+            href={author.socials.youtube}
             className="text-gray-600 hover:text-red-600 transition-colors duration-300"
-            aria-label="Pinterest"
+            aria-label="YouTube"
           >
-            <FaPinterest className="text-2xl" />
+            <FaYoutube className="text-2xl" />
           </a>
           <a
-            href={author.socials.linkedin}
+            href={author.socials.email}
             className="text-gray-600 hover:text-blue-700 transition-colors duration-300"
-            aria-label="LinkedIn"
+            aria-label="Email"
           >
-            <FaLinkedin className="text-2xl" />
+            <FaEnvelope className="text-2xl" />
           </a>
         </div>
       </div>
 
-      {/* Popular Articles */}
+      {/* Service Times */}
       <div className="bg-white rounded-xl shadow-lg p-6">
-        <h3 className="text-2xl font-bold text-gray-900 mb-6">Popular Articles</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-6">Horarios de Servicio</h3>
 
         <div className="space-y-4">
-          {articles.slice(0, 4).map((article, index) => (
+          {articles.slice(0, 3).map((article, index) => (
             <div
               key={article.id}
               className={`pb-4 ${
-                index < 3 ? 'border-b border-gray-200' : ''
+                index < 2 ? 'border-b border-gray-200' : ''
               }`}
             >
               <div className="flex items-center space-x-2 text-xs text-gray-500 mb-2">
@@ -87,10 +87,10 @@ const Sidebar = ({ author, articles }) => {
 
         {/* View All Link */}
         <a
-          href="#all-articles"
+          href="#horarios"
           className="block text-center text-blue-500 hover:text-blue-600 font-semibold mt-6 transition-colors duration-300"
         >
-          View All Articles →
+          Ver todos los horarios →
         </a>
       </div>
     </aside>
